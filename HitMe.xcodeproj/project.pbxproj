@@ -13,7 +13,10 @@
 		D860C52D1B2E11C800BF1178 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D860C52B1B2E11C800BF1178 /* Main.storyboard */; };
 		D860C52F1B2E11C800BF1178 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D860C52E1B2E11C800BF1178 /* Images.xcassets */; };
 		D860C5321B2E11C800BF1178 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D860C5301B2E11C800BF1178 /* LaunchScreen.xib */; };
-		D860C53E1B2E11C800BF1178 /* HitMeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D860C53D1B2E11C800BF1178 /* HitMeTests.m */; };
+		D860C5491B2E193C00BF1178 /* PlayingCard.m in Sources */ = {isa = PBXBuildFile; fileRef = D860C5481B2E193C00BF1178 /* PlayingCard.m */; };
+		D860C54C1B2E835200BF1178 /* PlayingCardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D860C54B1B2E835200BF1178 /* PlayingCardTests.m */; };
+		D860C54F1B2E8B4A00BF1178 /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = D860C54E1B2E8B4A00BF1178 /* Deck.m */; };
+		D860C5521B2E926D00BF1178 /* HitMeGame.m in Sources */ = {isa = PBXBuildFile; fileRef = D860C5511B2E926D00BF1178 /* HitMeGame.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +42,13 @@
 		D860C5311B2E11C800BF1178 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		D860C5371B2E11C800BF1178 /* HitMeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HitMeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D860C53C1B2E11C800BF1178 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D860C53D1B2E11C800BF1178 /* HitMeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HitMeTests.m; sourceTree = "<group>"; };
+		D860C5471B2E193C00BF1178 /* PlayingCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayingCard.h; sourceTree = "<group>"; };
+		D860C5481B2E193C00BF1178 /* PlayingCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCard.m; sourceTree = "<group>"; };
+		D860C54B1B2E835200BF1178 /* PlayingCardTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlayingCardTests.m; path = ../HitMe/PlayingCardTests.m; sourceTree = "<group>"; };
+		D860C54D1B2E8B4A00BF1178 /* Deck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Deck.h; sourceTree = "<group>"; };
+		D860C54E1B2E8B4A00BF1178 /* Deck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Deck.m; sourceTree = "<group>"; };
+		D860C5501B2E926D00BF1178 /* HitMeGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HitMeGame.h; sourceTree = "<group>"; };
+		D860C5511B2E926D00BF1178 /* HitMeGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HitMeGame.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +94,7 @@
 				D860C5261B2E11C800BF1178 /* AppDelegate.m */,
 				D860C5281B2E11C800BF1178 /* ViewController.h */,
 				D860C5291B2E11C800BF1178 /* ViewController.m */,
+				D860C54A1B2E194000BF1178 /* Model */,
 				D860C52B1B2E11C800BF1178 /* Main.storyboard */,
 				D860C52E1B2E11C800BF1178 /* Images.xcassets */,
 				D860C5301B2E11C800BF1178 /* LaunchScreen.xib */,
@@ -105,7 +115,7 @@
 		D860C53A1B2E11C800BF1178 /* HitMeTests */ = {
 			isa = PBXGroup;
 			children = (
-				D860C53D1B2E11C800BF1178 /* HitMeTests.m */,
+				D860C54B1B2E835200BF1178 /* PlayingCardTests.m */,
 				D860C53B1B2E11C800BF1178 /* Supporting Files */,
 			);
 			path = HitMeTests;
@@ -117,6 +127,19 @@
 				D860C53C1B2E11C800BF1178 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D860C54A1B2E194000BF1178 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D860C5501B2E926D00BF1178 /* HitMeGame.h */,
+				D860C5511B2E926D00BF1178 /* HitMeGame.m */,
+				D860C54D1B2E8B4A00BF1178 /* Deck.h */,
+				D860C54E1B2E8B4A00BF1178 /* Deck.m */,
+				D860C5471B2E193C00BF1178 /* PlayingCard.h */,
+				D860C5481B2E193C00BF1178 /* PlayingCard.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,9 +242,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D860C54F1B2E8B4A00BF1178 /* Deck.m in Sources */,
 				D860C52A1B2E11C800BF1178 /* ViewController.m in Sources */,
 				D860C5271B2E11C800BF1178 /* AppDelegate.m in Sources */,
+				D860C5491B2E193C00BF1178 /* PlayingCard.m in Sources */,
 				D860C5241B2E11C800BF1178 /* main.m in Sources */,
+				D860C5521B2E926D00BF1178 /* HitMeGame.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,7 +255,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D860C53E1B2E11C800BF1178 /* HitMeTests.m in Sources */,
+				D860C54C1B2E835200BF1178 /* PlayingCardTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
