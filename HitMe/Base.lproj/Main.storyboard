@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Game View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="GameViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -17,63 +16,96 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2hE-cX-AEM">
-                                <rect key="frame" x="66" y="589" width="63" height="30"/>
-                                <state key="normal" title="Flip Card">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xce-h4-EEE">
+                                <rect key="frame" x="150" y="55" width="75" height="105"/>
                                 <connections>
-                                    <action selector="flipCardButtonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="p9z-ZE-b9S"/>
+                                    <segue destination="PLd-kG-rQN" kind="embed" id="tt8-fn-Heh"/>
                                 </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Idp-en-K2e">
-                                <rect key="frame" x="239" y="589" width="70" height="30"/>
-                                <state key="normal" title="Next Card">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="nextCardButtonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="nSF-E0-Io8"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cLq-wT-rQ3">
-                                <rect key="frame" x="150" y="76" width="75" height="105"/>
+                            </containerView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ndLogo" translatesAutoresizingMaskIntoConstraints="NO" id="XvV-mG-nB7">
+                                <rect key="frame" x="150" y="596" width="75" height="105"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="105" id="sRd-b9-EtS"/>
-                                    <constraint firstAttribute="width" constant="75" id="xGu-8O-h2q"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="lfo-wV-3w2" appends="YES" id="LIS-Sg-muo"/>
+                                </connections>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.50196081399917603" blue="0.25098040699958801" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstAttribute="centerX" secondItem="cLq-wT-rQ3" secondAttribute="centerX" id="5Ad-kB-n3g"/>
-                            <constraint firstItem="cLq-wT-rQ3" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="MVS-3T-UJr"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="2hE-cX-AEM" secondAttribute="bottom" constant="48" id="X9m-bO-xWC"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Idp-en-K2e" secondAttribute="trailing" constant="50" id="bTE-Mq-gaK"/>
-                            <constraint firstItem="cLq-wT-rQ3" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="56" id="nfg-kJ-qbe"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="Idp-en-K2e" secondAttribute="bottom" constant="48" id="ntT-OR-sfb"/>
-                            <constraint firstItem="2hE-cX-AEM" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="50" id="pIV-62-cfZ"/>
-                            <constraint firstAttribute="centerX" secondItem="cLq-wT-rQ3" secondAttribute="centerX" id="ydM-zY-A2N"/>
-                        </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="MVS-3T-UJr"/>
-                                <exclude reference="ydM-zY-A2N"/>
-                            </mask>
-                        </variation>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="lfo-wV-3w2" appends="YES" id="az2-Ly-aFq"/>
+                        </connections>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="playingCardLabel" destination="cLq-wT-rQ3" id="ORS-9b-SdU"/>
+                        <outlet property="deckPlaceholderImageView" destination="XvV-mG-nB7" id="SNU-Hz-5AK"/>
+                        <outlet property="playingCardView" destination="Xce-h4-EEE" id="mM8-6G-lRE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="up" id="lfo-wV-3w2">
+                    <connections>
+                        <action selector="viewDidGetSwipeUp:" destination="vXZ-lx-hvc" id="kIo-1O-Ho0"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="273.5" y="384.5"/>
         </scene>
+        <!--Playing Card View Controller-->
+        <scene sceneID="UxH-X7-j1M">
+            <objects>
+                <viewController storyboardIdentifier="PlayingCardScene" automaticallyAdjustsScrollViewInsets="NO" id="PLd-kG-rQN" customClass="PlayingCardViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HHg-S9-QMf"/>
+                        <viewControllerLayoutGuide type="bottom" id="tTS-eX-Pno"/>
+                    </layoutGuides>
+                    <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="7sx-yD-9zz">
+                        <rect key="frame" x="0.0" y="0.0" width="75" height="105"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8eZ-Qa-cev">
+                                <rect key="frame" x="7" y="36" width="61" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="CiN-kH-ybE"/>
+                                    <constraint firstAttribute="width" constant="61" id="GXp-7S-tUB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ndLogo" translatesAutoresizingMaskIntoConstraints="NO" id="4dW-OD-KKC">
+                                <rect key="frame" x="0.0" y="0.0" width="75" height="105"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="8eZ-Qa-cev" secondAttribute="centerY" id="IZf-Xe-xFw"/>
+                            <constraint firstAttribute="centerX" secondItem="8eZ-Qa-cev" secondAttribute="centerX" id="lLm-Pi-iYm"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="3tp-fc-gqb" appends="YES" id="mVN-AG-WRr"/>
+                        </connections>
+                    </view>
+                    <toolbarItems/>
+                    <connections>
+                        <outlet property="playingCardBackImageView" destination="4dW-OD-KKC" id="azb-bI-F70"/>
+                        <outlet property="playingCardLabel" destination="8eZ-Qa-cev" id="Pq7-iS-owD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Vc-05-Uiv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="3tp-fc-gqb">
+                    <connections>
+                        <action selector="viewTappedToFlipCard:" destination="PLd-kG-rQN" id="7UK-ms-kxI"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="704.5" y="159.5"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="ndLogo" width="120" height="120"/>
+    </resources>
     <color key="tintColor" red="0.80000001192092896" green="1" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
 </document>

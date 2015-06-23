@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>8F642413-3A3B-4F74-97C4-2CE1F408A961</string>
+	<key>IDESourceControlProjectName</key>
+	<string>HitMe</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>831B0664EC4258447C7C36AE6E43BB1553F2025A</key>
+		<string>https://github.com/jlucerond/HitMe.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>HitMe.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>831B0664EC4258447C7C36AE6E43BB1553F2025A</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/jlucerond/HitMe.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>831B0664EC4258447C7C36AE6E43BB1553F2025A</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>831B0664EC4258447C7C36AE6E43BB1553F2025A</string>
+			<key>IDESourceControlWCCName</key>
+			<string>HitMe</string>
+		</dict>
+	</array>
+</dict>
+</plist>

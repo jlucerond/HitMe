@@ -22,6 +22,16 @@
 
 @implementation HitMeGame
 
+- (BOOL) hasNextCard {
+    return ([self.deck showNextCard] != nil);
+}
+
+- (PlayingCard *) nextCard {
+        return [self.deck dealNextCard];
+}
+
+#pragma mark - filling and shuffling deck
+
 - (NSArray *) validRanks {
     if (! _validRanks) {
         _validRanks = @[@"A", @"2", @"3", @"4", @"5", @"6", @"7", @"8", @"9", @"10", @"J", @"Q", @"K"];
@@ -41,16 +51,6 @@
         _colorForSuit = @{@"♠︎" : [UIColor blackColor], @"♣︎": [UIColor blackColor], @"♥︎" : [UIColor redColor], @"♦︎" : [UIColor redColor]};
     }
     return _colorForSuit;
-}
-
-// check these lines
-- (BOOL) hasNextCard {
-    return ([self.deck showNextCard] != nil);
-}
-- (PlayingCard *) nextCard {
-//    if ([self hasNextCard]){
-        return [self.deck dealNextCard];
- //
 }
 
 - (void) fillAndShuffle {

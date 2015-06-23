@@ -47,7 +47,6 @@
     
 }
 
-// this isn't working. giving me half of the cards for some reason
 - (void) shuffleDeck {
     int numOfCards = (int)self.cards.count;
     if (self.cards.count > 1) {

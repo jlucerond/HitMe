@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		D860C5241B2E11C800BF1178 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D860C5231B2E11C800BF1178 /* main.m */; };
 		D860C5271B2E11C800BF1178 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D860C5261B2E11C800BF1178 /* AppDelegate.m */; };
-		D860C52A1B2E11C800BF1178 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D860C5291B2E11C800BF1178 /* ViewController.m */; };
+		D860C52A1B2E11C800BF1178 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D860C5291B2E11C800BF1178 /* GameViewController.m */; };
 		D860C52D1B2E11C800BF1178 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D860C52B1B2E11C800BF1178 /* Main.storyboard */; };
 		D860C52F1B2E11C800BF1178 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D860C52E1B2E11C800BF1178 /* Images.xcassets */; };
 		D860C5321B2E11C800BF1178 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D860C5301B2E11C800BF1178 /* LaunchScreen.xib */; };
@@ -17,6 +17,7 @@
 		D860C54C1B2E835200BF1178 /* PlayingCardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D860C54B1B2E835200BF1178 /* PlayingCardTests.m */; };
 		D860C54F1B2E8B4A00BF1178 /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = D860C54E1B2E8B4A00BF1178 /* Deck.m */; };
 		D860C5521B2E926D00BF1178 /* HitMeGame.m in Sources */ = {isa = PBXBuildFile; fileRef = D860C5511B2E926D00BF1178 /* HitMeGame.m */; };
+		D8F5269D1B3477BA006921DF /* PlayingCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8F5269C1B3477BA006921DF /* PlayingCardViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,8 +36,8 @@
 		D860C5231B2E11C800BF1178 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D860C5251B2E11C800BF1178 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D860C5261B2E11C800BF1178 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		D860C5281B2E11C800BF1178 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		D860C5291B2E11C800BF1178 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D860C5281B2E11C800BF1178 /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		D860C5291B2E11C800BF1178 /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
 		D860C52C1B2E11C800BF1178 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D860C52E1B2E11C800BF1178 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D860C5311B2E11C800BF1178 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -49,6 +50,8 @@
 		D860C54E1B2E8B4A00BF1178 /* Deck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Deck.m; sourceTree = "<group>"; };
 		D860C5501B2E926D00BF1178 /* HitMeGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HitMeGame.h; sourceTree = "<group>"; };
 		D860C5511B2E926D00BF1178 /* HitMeGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HitMeGame.m; sourceTree = "<group>"; };
+		D8F5269B1B3477BA006921DF /* PlayingCardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayingCardViewController.h; sourceTree = "<group>"; };
+		D8F5269C1B3477BA006921DF /* PlayingCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCardViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,8 +95,10 @@
 			children = (
 				D860C5251B2E11C800BF1178 /* AppDelegate.h */,
 				D860C5261B2E11C800BF1178 /* AppDelegate.m */,
-				D860C5281B2E11C800BF1178 /* ViewController.h */,
-				D860C5291B2E11C800BF1178 /* ViewController.m */,
+				D860C5281B2E11C800BF1178 /* GameViewController.h */,
+				D860C5291B2E11C800BF1178 /* GameViewController.m */,
+				D8F5269B1B3477BA006921DF /* PlayingCardViewController.h */,
+				D8F5269C1B3477BA006921DF /* PlayingCardViewController.m */,
 				D860C54A1B2E194000BF1178 /* Model */,
 				D860C52B1B2E11C800BF1178 /* Main.storyboard */,
 				D860C52E1B2E11C800BF1178 /* Images.xcassets */,
@@ -243,11 +248,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				D860C54F1B2E8B4A00BF1178 /* Deck.m in Sources */,
-				D860C52A1B2E11C800BF1178 /* ViewController.m in Sources */,
+				D860C52A1B2E11C800BF1178 /* GameViewController.m in Sources */,
 				D860C5271B2E11C800BF1178 /* AppDelegate.m in Sources */,
 				D860C5491B2E193C00BF1178 /* PlayingCard.m in Sources */,
 				D860C5241B2E11C800BF1178 /* main.m in Sources */,
 				D860C5521B2E926D00BF1178 /* HitMeGame.m in Sources */,
+				D8F5269D1B3477BA006921DF /* PlayingCardViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,6 +448,7 @@
 				D860C5431B2E11C800BF1178 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D860C5441B2E11C800BF1178 /* Build configuration list for PBXNativeTarget "HitMeTests" */ = {
 			isa = XCConfigurationList;
@@ -450,6 +457,7 @@
 				D860C5461B2E11C800BF1178 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
